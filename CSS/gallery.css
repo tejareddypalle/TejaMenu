@@ -1,0 +1,107 @@
+.galleryyy{
+  display: inline-block;
+  width: 260px;
+  border: solid;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+img{
+  width: 180px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.galleryyy .name{
+  text-align: center;
+  font-weight: bold;
+}
+.galleryyy button{
+  margin-left: 30%;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.Top{
+  display: grid;
+  grid-template-columns: 400px 1fr;
+}
+.T_Left{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+.logoimg{
+  width: 70px;
+  height: auto;
+}
+.T_Right{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-top: 40px;
+}
+.Bottom{
+  margin-top: 10px;
+
+}
+.nameofedge{
+  font-size: 50px;
+  font-weight: bold;
+}
+.B_one{
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+}
+
+button{
+  font-weight: bold;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  border-style: solid;
+  cursor: pointer;
+}
+button:hover{
+  opacity: 0.75;
+  transition: 0.15s;
+}
+body{
+  background: linear-gradient(rgba(255,255,255, 0.5),rgba(255, 255, 255, 0.5)), url('/TejaMenu/images/gallback.jpg');background-position: center;
+  background-size: 100% 180%;
+  background-repeat: no-repeat;
+  margin: 20px;
+  margin-left: 120px;
+}
+@media (max-width: 950px) {
+  .B_one {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 951px) and (max-width: 1280px) {
+  .B_one {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1281px) {
+  .B_one {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+} 
+@media(max-width: 900px){
+  .T_Right{
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 901px) and (max-width: 1050px) {
+  .T_Right {
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1051px) {
+  .T_Right {
+    flex-wrap: wrap;
+  }
+}

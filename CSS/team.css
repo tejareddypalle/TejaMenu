@@ -1,0 +1,131 @@
+/* Body */
+body {
+  background: linear-gradient(rgba(255,255,255, 0.5), rgba(255, 255, 255, 0.5)),
+              url('/TejaMenu/images/pngtree-empty-wood-table-top-with-chef-cooking-in-restaurant-kitchen-blurred-image_15653838.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Layout Grid */
+.T_main {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+}
+
+/* Header Section */
+.T_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 30px;
+}
+
+.T_top_left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.T_top_right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #f1f1f1;
+}
+
+button:hover {
+  opacity: 0.75;
+  transition: 0.15s;
+}
+
+/* Middle Content */
+.T_middle {
+  margin-top: 30px;
+}
+
+/* Bottom Team Section */
+.T_bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 30px;
+  padding: 0 30px;
+}
+
+/* Team Members Grid */
+.T_bottom_one,
+.T_bottom_two {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Image Styling */
+.T_bottom_one_img1,
+.T_bottom_one_img2,
+.T_bottom_one_img3 {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Text Details */
+.name,
+.role {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Utility */
+.whole {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+  .T_top_right {
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .name,
+  .role {
+    font-size: 16px;
+  }
+}

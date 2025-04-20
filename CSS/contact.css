@@ -1,0 +1,153 @@
+/* General */
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Top */
+.C_top {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Middle Section */
+.C_middle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 0;
+}
+
+/* Left Text */
+.C_middle_left {
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 20px;
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+/* Center Buttons */
+.C_middle_center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+  flex: 1 1 300px;
+}
+
+/* Right Logo */
+.C_middle_right_logo {
+  width: 200px;
+  flex: 1 1 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Buttons */
+button {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  color: black;
+}
+
+button:hover {
+  opacity: 0.75;
+  transition: 0.15s;
+}
+
+/* Line */
+.C_line {
+  height: 2px;
+  background-color: black;
+  margin-top: 20px;
+  margin-right: 340px;
+}
+
+/* Bottom Section */
+.C_bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+  gap: 40px;
+}
+
+/* Left Column */
+.C_bottom_left {
+  font-size: 22px;
+  flex: 1 1 300px;
+}
+
+/* Right Column */
+.C_bottom_right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1 1 300px;
+}
+
+.C_bottom_right_one {
+  font-size: 22px;
+}
+
+.C_bottom_right_two {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Social Images */
+.images,
+.fbimage,
+.imagex {
+  width: 60px;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .C_top {
+    font-size: 24px;
+  }
+
+  .C_middle_left {
+    font-size: 28px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .C_bottom_left,
+  .C_bottom_right_one {
+    font-size: 18px;
+  }
+
+  .images,
+  .fbimage,
+  .imagex {
+    width: 50px;
+  }
+
+  .C_line {
+    margin-right: 0;
+    width: 100%;
+  }
+}

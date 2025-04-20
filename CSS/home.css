@@ -1,0 +1,107 @@
+.H_Home {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+/* HEADER STYLING */
+.H_header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  gap: 20px;
+}
+
+.H_header_left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.H_Restaurentname h1 {
+  font-size: 36px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.H_Restaurentlogo {
+  width: 75px;
+}
+
+/* BUTTON GROUP */
+.H_header_right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  background-color: #f1f1f1;
+}
+
+button:hover {
+  opacity: 0.75;
+  transition: 0.15s;
+}
+
+/* MAIN SECTION */
+.H_main {
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.text h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.btn_ {
+  font-size: 24px;
+  padding: 10px 30px;
+  margin-top: 20px;
+}
+
+/* BACKGROUND */
+body {
+  margin: 20px;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+              url('/TejaMenu/images/premium_photo-1694141252026-3df1de888a21.avif');
+  background-size: 100% 180%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+  .H_header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .H_header_right {
+    justify-content: flex-start;
+  }
+
+  .text h4 {
+    font-size: 22px;
+    padding: 0 10px;
+  }
+
+  .btn_ {
+    font-size: 20px;
+    margin-left: 0;
+  }
+}
